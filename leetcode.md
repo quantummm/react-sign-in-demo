@@ -1,15 +1,12 @@
-<!--
- * @Author: your name
- * @Date: 2020-09-25 18:09:55
- * @LastEditTime: 2020-09-25 18:10:21
- * @LastEditors: your name
- * @Description: In User Settings Edit
- * @FilePath: /shopping-cart-app/leetcode.md
--->
+### Leetcode
 
-### 6. Fizz Buzz - 412
+### 1. Fizz Buzz - 412
 
-<img align="left" src="image-20200925170228838.png" alt="image-20200925170228838" style="zoom:50%;" />
+Description:
+Write a program that outputs the string representation of numbers from 1 to n.
+
+But for multiples of three it should output “Fizz” instead of the number and for the multiples of five output “Buzz”. For numbers which are multiples of both three and five output “FizzBuzz”.
+
 ### Solution (Javascript):
 
 ```js
@@ -33,9 +30,9 @@ var fizzBuzz = function (n) {
 };
 ```
 
-### 7. Shuffle an Array 打乱数组 - 384
+### 2. Shuffle an Array 打乱数组 - 384
 
-<img align="left" src="image-20200925180005446.png" alt="image-20200925180005446" style="zoom:50%;" />
+Description: Shuffle a set of numbers without duplicates.
 
 ### Solution (Javascript):
 
