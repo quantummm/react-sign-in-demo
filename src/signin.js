@@ -1,7 +1,7 @@
 /*
  * @Author: Aiden
  * @Date: 2020-09-25 11:41:03
- * @LastEditTime: 2020-09-25 16:27:12
+ * @LastEditTime: 2020-09-25 21:59:48
  * @LastEditors: Please set LastEditors
  * @Description: Sign in Page
  * @FilePath: /shopping-cart-app/src/signin.js
@@ -41,10 +41,18 @@ const useStyles = makeStyles((theme) => ({
 
 function Signin() {
   const classes = useStyles();
+  const [names, setNames] = useState("");
   const [values, setValues] = useState({
     password: "",
     showPassword: false,
   });
+
+  const onClickSignin = () => {
+    if (names == "" || values.password == "") {
+      alert("Please fill in the field");
+    }
+  };
+
   const handleChange = (prop) => (e) => {
     setValues({ ...values, [prop]: e.target.value });
   };
@@ -57,6 +65,10 @@ function Signin() {
     event.preventDefault();
   };
 
+  const userNameChange = (e) => {
+    setNames(e.target.value);
+  };
+
   return (
     <Container component="main" maxWidth="xs">
       <CssBaseline />
@@ -64,7 +76,7 @@ function Signin() {
         <Typography component="h1" variant="h5">
           Sign in
         </Typography>
-        <form className={classes.form} noValidate>
+        <form className={classes.form}>
           <TextField
             id="outlined-username-input"
             label="Username"
@@ -72,6 +84,7 @@ function Signin() {
             autoComplete="current-username"
             variant="outlined"
             margin="normal"
+            onChange={userNameChange}
             required
             fullWidth
           />
@@ -106,10 +119,19 @@ function Signin() {
             variant="contained"
             color="secondary"
             size="large"
+            onClick={onClickSignin}
             className={classes.submit}
           >
             Sign in
           </Button>
+          <Typography component="p" variant="h5">
+            Username:
+            {names}
+          </Typography>
+          <Typography component="p" variant="h5">
+            Password:
+            {values.password}
+          </Typography>
         </form>
       </div>
     </Container>
