@@ -1,7 +1,7 @@
 /*
  * @Author: Aiden
  * @Date: 2020-09-25 11:41:03
- * @LastEditTime: 2020-09-25 21:59:48
+ * @LastEditTime: 2020-09-30 11:11:37
  * @LastEditors: Please set LastEditors
  * @Description: Sign in Page
  * @FilePath: /shopping-cart-app/src/signin.js
@@ -124,14 +124,14 @@ function Signin() {
           >
             Sign in
           </Button>
-          <Typography component="p" variant="h5">
+          {/* <Typography component="p" variant="h5">
             Username:
             {names}
           </Typography>
           <Typography component="p" variant="h5">
             Password:
             {values.password}
-          </Typography>
+          </Typography> */}
         </form>
       </div>
     </Container>
