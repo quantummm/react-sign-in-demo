@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Shopping Cart App
+## React-sign-in-demo
 
 This app is developed by:
 
